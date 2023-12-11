@@ -24,7 +24,7 @@ jobs:
       - name: "Checkout Lambda Repository"
         uses: actions/checkout@v2
         with:
-          repository: GHActions
+          repository: chegireddy/GHActions
           ref: main
           path: /home/runner/work/GHActions/GHActions/VG/
       #- name: TFC AWS Provider Setup 
