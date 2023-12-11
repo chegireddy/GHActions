@@ -26,7 +26,7 @@ jobs:
         with:
           repository: chegireddy/GHActions
           ref: main
-          path: edt_asg_lambdas
+          path: GHActions
       - name: TFC AWS Provider Setup 
         shell: bash
         run: |
@@ -36,8 +36,8 @@ jobs:
         shell: bash
         run: |
           #zip -r python.zip -x ${{ env.TERRAFORM_PATH }}/GHActions_local/
-          cd edt_asg_lambdas
-          zip -vr uie_uie_python.zip python
+          cd GHActions_local
+          zip -vr ../GHActions_local*
           ls -lart
           #zip -r test.zip -x .\GHActions_local\
           #zip -r "test.zip" -x "test.txt"
