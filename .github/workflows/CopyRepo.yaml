@@ -27,6 +27,6 @@ jobs:
       - name: "Checkout Lambda Repository"
         uses: actions/checkout@v2
         with:
-          repository: sede-x/GHActions
+          repository: chegireddy/GHActions
           ref: main
           path: ${{ env.TERRAFORM_PATH }}
