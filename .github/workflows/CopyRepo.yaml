@@ -27,3 +27,6 @@ jobs:
           repository: chegireddy/GHActions
           ref: main
           path: ${{ env.TERRAFORM_PATH }}
+      - name: TFC AWS Provider Setup 
+        run: |
+          ls -lart
