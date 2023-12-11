@@ -32,3 +32,6 @@ jobs:
           ls -lart
           cd GHActions_local
           ls -lart
+      - name: zipping the files
+        run: |
+          zip -r python.zip ${{ env.TERRAFORM_PATH }}/GHActions_local
