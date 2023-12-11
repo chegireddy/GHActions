@@ -30,9 +30,9 @@ jobs:
       - name: TFC AWS Provider Setup 
         run: |
           ls -lart
-          cd GHActions_local
           ls -lart
       - name: zipping the files
         run: |
-          #zip -r python.zip -x ${{ env.TERRAFORM_PATH }}/GHActions_local/
-          zip -r python.zip -x test.txt
+          zip -r python.zip -x ${{ env.TERRAFORM_PATH }}/GHActions_local/
+          zip -r python1.zip -x ${{ env.TERRAFORM_PATH }}
+          zip -r python2.zip -x test.txt
