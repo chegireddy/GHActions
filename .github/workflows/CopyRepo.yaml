@@ -38,5 +38,5 @@ jobs:
           #zip -r python.zip -x ${{ env.TERRAFORM_PATH }}/GHActions_local/
           cd GHActions_local
           ls -lart
-          zip -r python1.zip -x .\git\
+          zip -r test.zip -x .\GHActions_local\
           #zip -r "test.zip" -x "test.txt"
