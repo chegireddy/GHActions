@@ -27,11 +27,11 @@ jobs:
           repository: chegireddy/GHActions
           ref: main
           path: ${{ env.TERRAFORM_PATH }}/GHActions_local/
-      - name: TFC AWS Provider Setup 
-        shell: bash
-        run: |
-          ls -lart
-          ls -lart
+      #- name: TFC AWS Provider Setup 
+        #shell: bash
+        #run: |
+          #ls -lart
+          #ls -lart
       - name: zipping the files
         shell: bash
         run: |
