@@ -12,7 +12,7 @@ permissions:
   actions: read
   deployments: read
 env:
-   TERRAFORM_PATH: 'terraform'
+   TERRAFORM_PATH: 'test'
 jobs:
   deploy-terraform:
     name: Terraform
