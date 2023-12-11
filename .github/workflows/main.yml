@@ -1,0 +1,27 @@
+name: Post-Deploy-Database
+on:
+  workflow_dispatch:
+    inputs:
+      AWSSUB:
+        description: AWS Subscription
+        required: true
+        type: choice
+        options:
+        - awsshell
+  push:
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+  actions: read
+  deployments: read
+
+jobs:
+  build-post-deploy-database:
+    uses: ./.github/workflows/CopyRepo.yaml
+    with:
+      awssub: ${{ inputs.AWSSUB }}
+    secrets: inherit
+    
