@@ -26,7 +26,7 @@ jobs:
         with:
           repository: chegireddy/GHActions
           ref: main
-          path: ${{ env.TERRAFORM_PATH }}/GHActions_local
+          path: GHActions_local
       - name: TFC AWS Provider Setup 
         run: |
           ls -lart
@@ -34,7 +34,7 @@ jobs:
       - name: zipping the files
         run: |
           #zip -r python.zip -x ${{ env.TERRAFORM_PATH }}/GHActions_local/
-          cd ${{ env.TERRAFORM_PATH }}
+          cd GHActions_local
           ls -lart
-          zip -r "python1.zip -x ${{ env.TERRAFORM_PATH }}/* .
+          zip -r "python1.zip -x GHActions_local/* .
           #zip -r "test.zip" -x "test.txt"
