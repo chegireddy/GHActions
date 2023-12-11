@@ -19,14 +19,14 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: chegireddy
+        working-directory: VG
     steps:        
       - name: "Checkout Lambda Repository"
         uses: actions/checkout@v2
         with:
-          repository: chegireddy/GHActions
+          repository: GHActions
           ref: main
-          path: GHActions_local
+          path: /home/runner/work/GHActions/GHActions/VG/
       #- name: TFC AWS Provider Setup 
         #shell: bash
         #run: |
