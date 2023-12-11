@@ -2,8 +2,8 @@ name: Build Infra
 on:
   workflow_call:
     inputs:
-      ENVIRONMENT:
-        description: Environment to Build
+      AWSSUB:
+        description: AWS Subscription
         required: true
         type: string
 permissions:
