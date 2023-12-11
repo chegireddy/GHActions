@@ -1,1 +1,32 @@
-Zip this file
+name: Build Infra
+on:
+  workflow_call:
+    inputs:
+      ENVIRONMENT:
+        description: Environment to Build
+        required: true
+        type: string
+permissions:
+  id-token: write
+  contents: read
+  actions: read
+  deployments: read
+env:
+   TERRAFORM_PATH: 'terraform'
+jobs:
+  deploy-terraform:
+    name: Terraform
+    runs-on: CPE-Runners
+    defaults:
+      run:
+        working-directory: terraform
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: "Checkout Lambda Repository"
+        uses: actions/checkout@v2
+        with:
+          repository: sede-x/GHActions
+          ref: main
+          path: ${{ env.TERRAFORM_PATH }}
