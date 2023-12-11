@@ -32,6 +32,3 @@ jobs:
           ls -lart
           cd GHActions_local
           ls -lart
-          cd ..
-          zip -r Vg.Zip GHActions_local
-          ls -lart
