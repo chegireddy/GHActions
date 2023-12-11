@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: terraform
+        working-directory: chegireddy
     steps:        
       - name: "Checkout Lambda Repository"
         uses: actions/checkout@v2
